@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.header-content {
+    border: solid 2px;
+    background-color: darkslategrey;
+    color: white;
+    display: flex;
+    justify-content: center;  
+    padding: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav {
+    border: solid 2px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.principal-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px; 
+}
+.main-content {
+    background-color: cornflowerblue;
+    padding: 50px;
+    min-height: 300px;
+}
+.aside {
+    padding: 30px;
+}
+.footer {
+    background-color: darkslategray;
+    display: flex;
+    padding: 50px;
+}
