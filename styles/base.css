@@ -1,8 +1,28 @@
+ /*Fuente de encabezado*/
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+ /*Fuente de texto normal*/
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans&display=swap');
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #FCA311;
+
+    --heading-font: "Abril Fatface", serif;
+    --paragraph-font: "Alegreya Sans", serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
 * {
 	margin: 0;
 	padding: 0;
 }
 .header-content {
+    border-radius: 5px;
     border: solid 2px;
     background-color: darkslategrey;
     color: white;
@@ -22,17 +42,37 @@ nav a {
     padding: 20px;
 }
 .principal-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px; 
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    /* gap: 0px;  */
+}
+div h2 {
+    background-color: black;
+    border-radius: 4px;
 }
 .main-content {
-    background-color: cornflowerblue;
-    padding: 50px;
+    margin: 10px;
+    padding: 40px;
     min-height: 300px;
+    border-radius: 5px;
+}
+.grid{
+    display: flex;
+}
+.isaac-img {
+    border-radius: 4px;
+    margin: 10px;
+    border: red solid;
+    height: auto;
+}
+p {
+    margin: 40px;
 }
 .aside {
-    padding: 30px;
+    border-radius: 4px;
+    margin: 40px;
+    padding: 50px;
+    background-color: #FCA311;
 }
 .footer {
     background-color: darkslategray;
