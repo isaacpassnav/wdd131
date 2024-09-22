@@ -34,9 +34,6 @@ nav a {
   text-decoration: none;
   color: white;
 }
-/* .nav li:hover{
-    border-bottom: 2px solid white;
-} */
 .nav {
     border: solid 2px;
     background-color: black;
