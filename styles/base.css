@@ -34,6 +34,9 @@ nav a {
   text-decoration: none;
   color: white;
 }
+/* .nav li:hover{
+    border-bottom: 2px solid white;
+} */
 .nav {
     border: solid 2px;
     background-color: black;
@@ -44,11 +47,12 @@ nav a {
 .principal-content {
     display: flex;
     grid-template-columns: 2fr 1fr;
-    /* gap: 0px;  */
+    gap: 40px;
 }
 div h2 {
     background-color: black;
     border-radius: 4px;
+    text-align: center;
 }
 .main-content {
     margin: 10px;
@@ -56,26 +60,69 @@ div h2 {
     min-height: 300px;
     border-radius: 5px;
 }
-.grid{
+.card{
     display: flex;
 }
 .isaac-img {
     border-radius: 4px;
-    margin: 10px;
+    margin: 20px;
     border: red solid;
     height: auto;
+}
+.isaac-img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    border-radius: 5px;
 }
 p {
     margin: 40px;
 }
+hr {
+    margin: 20px;
+}
+.peru-flag {
+    border-radius: 4px;
+    margin: 20px;
+    border: red solid;
+    height: auto;
+}
 .aside {
     border-radius: 4px;
-    margin: 40px;
-    padding: 50px;
+    margin: 50px;
+    padding: 40px;
     background-color: #FCA311;
+}
+.resources {
+    padding: 20px;
 }
 .footer {
     background-color: darkslategray;
+}
+.nav-social-media {
     display: flex;
-    padding: 50px;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 200px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.nav-social-media img {
+    width: 30px; 
+    height: auto; 
+    object-fit: cover; 
+}
+.conteiner-social-media {
+    display: flex;
+    padding-right: 60px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+}  
+.nav-social-media img {
+    margin-top: -40px;
+    padding: 5px;
 }

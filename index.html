@@ -24,32 +24,54 @@
         <div class="principal-content">
             <div class="main-content">
                 <h2 class="">About Me</h2>
-                <div class="grid">
-                    <img class="isaac-img" src="/images/image-isaac.jpg" alt="image-isaac" width="170" >
+                <section class="card">
+                    <img class="isaac-img" src="images/image-isaac.jpg" alt="image-isaac" width="170" >
                     <p>
                         Hello, my name is Isaac Pasapera. I am from Peru, born in Piura, but currently living in Lima. I love
                         doing sports like swimming, running, and walking with my dog. Recently, I have been learning web
                         development with HTML, JS, and CSS technologies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea in aspernatur nulla dicta accusantium pariatur. Illo hic sequi libero, nesciunt at nostrum nisi ipsum suscipit, unde, corporis qui temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores porro molestiae culpa debitis iusto officia a quas quaerat aspernatur molestias, incidunt nesciunt ea. Labore perferendis exercitationem cumque accusamus veritatis quam!
                     </p>
-                </div>
+                </section>
                 <hr>
                 <h2 class="from-country">Lima, Perú</h2>
-                <div class="grid2">
-                    <img class="peru-flag" src="/images/peru-flag.jfif" alt="peru-flag" width="170">
+                <section class="card">
                     <p>
-
+                        Peru is a diverse country rich in history, located in South America. It’s famous for being the home of the Inca Empire and wonders like Machu Picchu. Its capital, Lima, is known for its world-renowned cuisine. With landscapes ranging from the coast, the Andes, to the Amazon rainforest, Peru offers a rich variety of cultural and natural experiences. It’s an ideal destination for those looking to explore history, nature, and unique flavors.
                     </p>
-                </div>
+                    <img class="peru-flag" src="images/peru-flag.jfif" alt="peru-flag" width="160">
+                </section>
             </div>
             <aside class="aside">
-                <h2>Aside content</h2>
+                <h2>Web Dev Resources</h2>
+                <ol class="resources">
+                    <a href="#">CSS Trikcs</a>
+                    <a href="#">Dev. to community</a>
+                    <a href="#">wdd101 project</a>
+                    <a href="#">Udemy</a>
+                </ol>
             </aside>
         </div>
     </main>
     <footer class="footer">
-        <h2 class="h3-footer">Footer content</h2>
+        <p>
+            &copy; <span id="currentyear"></span> Isaac Pasapera | Perú-Lima
+        </p>
+        <p id="lastModified"></p>
+        <nav class="nav-social-media">
+            <div class="conteiner-social-media">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" width="30" alt="facebook">
+                </a>
+                <a href="https://twitter.com/i/flow/login">
+                    <img src="images/twitter.png" width="30" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" width="30" alt="instagram">
+                </a>
+            </div>
+        </nav>
     </footer>
-
+    <script src="/scrips/getdates.js"> </script>
 </body>
 
 </html>
