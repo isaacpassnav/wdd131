@@ -2,6 +2,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
  /*Fuente de texto normal*/
  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans&display=swap');
+ @media screen and (max-width: 768px) {
+    .principal-content {
+        flex-direction: column; 
+    }
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main-content, .aside {
+        margin: 10px;
+        padding: 20px;
+    }
+}
 body {
     font-family: var(--paragraph-font);
     line-height: 1.6;
@@ -24,8 +37,8 @@ h1,h2,h3,h4,h5,h6 {
 .header-content {
     border-radius: 5px;
     border: solid 2px;
-    background-color: darkslategrey;
-    color: white;
+    background-color: #080000 ;
+    color: #ffffff;
     display: flex;
     justify-content: center;  
     padding: 50px;
@@ -33,6 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 nav a {
   text-decoration: none;
   color: white;
+  transition: all 0.3s ease;
 }
 .nav {
     border: solid 2px;
@@ -41,6 +55,10 @@ nav a {
     justify-content: space-around;
     padding: 20px;
 }
+nav a:hover {
+    color: #FCA311; /* Changes the color on hover */
+    text-decoration: underline; /* Adds an underline effect on hover */
+  }
 .principal-content {
     display: flex;
     grid-template-columns: 2fr 1fr;
