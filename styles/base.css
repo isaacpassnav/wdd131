@@ -1,8 +1,4 @@
- /*Fuente de encabezado*/
- @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
- /*Fuente de texto normal*/
- @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans&display=swap');
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .principal-content {
         flex-direction: column; 
     }
@@ -62,7 +58,7 @@ nav a:hover {
 .principal-content {
     display: flex;
     grid-template-columns: 2fr 1fr;
-    gap: 40px;
+    gap: 20px;
 }
 div h2 {
     background-color: black;
@@ -72,8 +68,9 @@ div h2 {
 .main-content {
     margin: 10px;
     padding: 40px;
-    min-height: 300px;
+    min-height: 200px;
     border-radius: 5px;
+    flex: 1;
 }
 .card{
     display: flex;
@@ -106,9 +103,16 @@ hr {
     margin: 50px;
     padding: 40px;
     background-color: #FCA311;
+    border: solid #c48622;
+}
+.aside h2 {
+    display: flex;
+    
 }
 .resources {
-    padding: 20px;
+    padding: 80px;
+    /* list-style-type: none; */
+    padding-left: 20px;
 }
 .footer {
     background-color: darkslategray;
