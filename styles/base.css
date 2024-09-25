@@ -56,8 +56,8 @@ nav a {
     padding: 20px;
 }
 nav a:hover {
-    color: #FCA311; /* Changes the color on hover */
-    text-decoration: underline; /* Adds an underline effect on hover */
+    color: #FCA311; 
+    text-decoration: underline; 
   }
 .principal-content {
     display: flex;
