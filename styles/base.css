@@ -111,11 +111,10 @@ hr {
 }
 .resources {
     padding: 80px;
-    /* list-style-type: none; */
     padding-left: 20px;
 }
 .footer {
-    background-color: darkslategray;
+    background-color: rgb(82, 145, 145);
 }
 .nav-social-media {
     display: flex;
