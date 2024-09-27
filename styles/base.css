@@ -114,7 +114,8 @@ hr {
     padding-left: 20px;
 }
 .footer {
-    background-color: rgb(82, 145, 145);
+    background-color: rgb(2, 91, 150)
+    
 }
 .nav-social-media {
     display: flex;
@@ -139,6 +140,7 @@ footer {
 footer p{
     display: flex;
     justify-content: center;
+    color: #ffffff;
 }  
 .nav-social-media img {
     margin-top: -40px;
