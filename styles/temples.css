@@ -33,11 +33,16 @@ h1,h2,h3,h4,h5,h6 {
 .header-content {
     border-radius: 5px;
     border: solid 2px;
-    background-color: #1c0000 ;
+    background-color: #201df0 ;
     color: #ffffff;
     display: flex;
     justify-content: center;  
     padding: 50px;
+}
+#responsive-header {
+    color: black;   
+    padding: 2rem;
+    text-align: center;
 }
 #menu {
     display: block;
@@ -62,7 +67,7 @@ nav a {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    display: none; /* Por defecto, el nav está oculto */
+    display: none; 
     background-color: black;
     padding: 20px;
 }
@@ -76,70 +81,18 @@ nav a:hover {
 #menu.show::before {
 	content: "X";
 }
-.principal-content {
-    display: flex;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+figure {
+    display: inline-block;
+	margin: 10px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #ccc;
+	text-align: center;
 }
-div h2 {
-    background-color: black;
-    border-radius: 4px;
-    text-align: center;
-}
-.main-content {
-    margin: 10px;
-    padding: 40px;
-    min-height: 200px;
-    border-radius: 5px;
-    flex: 1;
-}
-.card{
-    display: flex;
-}
-.isaac-img {
-    border-radius: 4px;
-    margin: 20px;
-    border: red solid;
-    height: auto;
-}
-.isaac-img:hover {
-    transform: scale(1.1);
-    transition: 2s;
-    border-radius: 5px;
-}
-p {
-    margin: 40px;
-}
-hr {
-    margin: 20px;
-}
-.peru-flag {
-    border-radius: 4px;
-    margin: 20px;
-    border: red solid;
-    height: auto;
-}
-.aside {
-    border-radius: 4px;
-    margin: 50px;
-    padding: 40px;
-    background-color: #d28002;
-    border: solid #c48622;
-}
-.aside h2 {
-    display: flex;
-    
-}
-.resources {
-    padding: 80px;
-    padding-left: 20px;
-}
-li a {
-    color: #080000;
-}
-.footer {
-    background-color: rgb(2, 71, 110)  
-}
+
+/* trabajando con el footer */
 .nav-social-media {
     display: flex;
     justify-content: space-around;
@@ -147,6 +100,8 @@ li a {
     max-width: 200px;
 }
 footer {
+    
+    background-color: rgb(2, 71, 110);
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -160,13 +115,12 @@ footer {
     display: flex;
     padding-right: 60px;
 }
-footer p{
+footer p {
+    padding: 30px;
     display: flex;
-    justify-content: center;
     color: #ffffff;
-}  
+}
 .nav-social-media img {
-    margin-top: -40px;
     padding: 5px;
 }
 @media only screen and ( min-width: 40em ) {
@@ -185,3 +139,4 @@ footer p{
         display: none;
     }
 }
+
