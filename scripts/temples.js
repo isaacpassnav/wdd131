@@ -15,3 +15,15 @@ if (mainNav && hamButton) {
         hamButton.classList.toggle("show"); 
     });
 }
+
+// const header = document.getElementById("responsive-header");
+// const listNav = document.querySelectorAll("menu-link")
+
+// listNav.forEach(link => {
+//     link.addEventListener("click", (event) =>{
+//         event.preventDefault();
+
+//         const data = event.target.getAttribute("data-section");
+//         header.textContent = `${data}`;
+//     })
+// });
