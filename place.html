@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Isaac Pasapera</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Isaac Pasapera">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts reference -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/place.css">
+</head>
+<body>
+    <main>
+        <header class="header-content">
+            <h1>Wellcome to Perú!</h1>
+        </header>
+        <hr>
+        <section class="main-section">
+            <div class="hero">
+                <picture>
+                    <source srcset="/images/background-place-2.webp" media="(min-width: 1000px)">
+                    <source srcset="/images/background-place-1.webp" media="(min-width: 500px)">
+                    <img src="/images/background-place.webp" alt="peru-background" width="500px" height="250px">
+                </picture>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p>
+            &copy; <span id="currentyear"></span>  Isaac Pasapera | Perú-Lima
+        </p>
+        <p id="lastModified"></p>
+        <nav class="nav-social-media">
+            <div class="conteiner-social-media">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" width="30" alt="facebook">
+                </a>
+                <a href="https://twitter.com/i/flow/login">
+                    <img src="images/twitter.png" width="30" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" width="30" alt="instagram">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+<script src="./scripts/getdates.js"></script>
+</html>
