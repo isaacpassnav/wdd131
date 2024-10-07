@@ -19,17 +19,17 @@
     <link rel="stylesheet" href="./styles/place.css">
 </head>
 <body>
+    <header class="header-content">
+        <h1>Wellcome to Perú!</h1>
+    </header>
     <main>
-        <header class="header-content">
-            <h1>Wellcome to Perú!</h1>
-        </header>
         <hr>
         <section class="main-section">
             <div class="hero">
                 <picture>
                     <source srcset="/images/background-place-2.webp" media="(min-width: 1000px)">
                     <source srcset="/images/background-place-1.webp" media="(min-width: 500px)">
-                    <img src="/images/background-place.webp" alt="peru-background" width="500px" height="250px">
+                    <img src="/images/background-place.webp" alt="peru-background" width="500" height="250">
                 </picture>
                 <div class="data-box">
                     <h2>Data</h2>
@@ -77,6 +77,6 @@
         </nav>
     </footer>
 </body>
-<script src="./scripts/getdates.js"></script>
-<script src="./scripts/windChill.js"></script>
+<script src="./scripts/getdates.js" defer></script>
+<script src="./scripts/windChill.js" defer></script>
 </html>
