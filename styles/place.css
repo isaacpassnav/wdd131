@@ -1,7 +1,20 @@
 @media screen and (max-width: 768px) {
-    
+    .header-content {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .hero img {
+        height: auto;
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .conteiner-social-media {
+        padding-right: 0;
+    }
 }
-
 body {
     font-family: var(--paragraph-font);
     line-height: 1.6;
@@ -34,4 +47,110 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
+.data-box {
+    position: absolute;
+    top: 200px; 
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 250px;
+}
+.data-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #00753a; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.data-box p {
+    margin: 5px 0;
+    color: black; 
+}
+.data-list li:nth-child(1),
+.data-list li:nth-child(2),
+.data-list li:nth-child(3),
+.data-list li:nth-child(4),
+.data-list li:nth-child(5),
+.data-list li:nth-child(6),
+.data-list li:nth-child(7) {
+    font-weight: bold;
+    text-align: center;
+}
+ul li {
+    list-style-type: none;
+}
+/*weather box*/
+.weather h2::after {
+    display: inline-block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+.weather-box {
+    position: absolute;
+    top: 500px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 200px;
+}
+.weather-box h2 img {
+    width: 40px;
+    height: 40px;
+}
+.weather-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #00753a; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+.weather-box p {
+    margin: 5px 0;
+    color: black;
+}
+.weather-list li:nth-child(1), 
+.weather-list li:nth-child(2),
+.weather-list li:nth-child(3),
+.weather-list li:nth-child(4),
+.weather-list li:nth-child(5){
+    font-weight: bold;
+    text-align: center;
+}
+/* trabajando con el footer */
+.nav-social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 200px;
+}
+footer {
+    background-color: rgb(2, 71, 110);
+    display: flex;
+    justify-content: space-between;
+}
+.nav-social-media img {
+    width: 30px; 
+    height: auto; 
+    object-fit: cover; 
+}
+.conteiner-social-media {
+    display: flex;
+    padding-right: 60px;
+}
+footer p {
+    padding: 30px;
+    display: flex;
+    color: #ffffff;
+}
+.nav-social-media img {
+    padding: 5px;
+}
+

@@ -31,10 +31,32 @@
                     <source srcset="/images/background-place-1.webp" media="(min-width: 500px)">
                     <img src="/images/background-place.webp" alt="peru-background" width="500px" height="250px">
                 </picture>
+                <div class="data-box">
+                    <h2>Data</h2>
+                    <ul class="data-list">
+                        <li><span>Area: 1,285,215.6 square kilometres.</span></li>
+                        <li><span>Population: 32 million people.</span></li>
+                        <li><span>Capital: Lima.</span></li>
+                        <li><span>Languages: Spanish, Quechua and Aymara.</span></li>
+                        <li><span>Time Zone: GMT-5</span></li>
+                        <li><span>Calling Code: +51</span></li>
+                        <li><span>Internet TLD: .pe </span></li>
+                    </ul>
+                </div>
+                <div class="weather-box">
+                    <h2>Weather <img src="/images/weather_sun.svg" alt="weather-icon" class="weather-icon"></h2>
+                    <ul class="weather-list">
+                        <li><span>Temperature: 17°C </span></li>
+                        <li><span>Conditions: Partly cloudy </span></li>
+                        <li><span>Wind: 5 Km/h </span></li>
+                        <li><span>Wind chill: 15.8°C </span></li>
+                    </ul>
+                </div>
             </div>
-
         </section>
     </main>
+    <hr>
+
     <footer class="footer">
         <p>
             &copy; <span id="currentyear"></span>  Isaac Pasapera | Perú-Lima
@@ -56,4 +78,5 @@
     </footer>
 </body>
 <script src="./scripts/getdates.js"></script>
+<script src="./scripts/windChill.js"></script>
 </html>
