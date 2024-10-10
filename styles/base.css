@@ -82,7 +82,7 @@ nav a {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    display: none; /* Por defecto, el nav está oculto */
+    display: none; 
     background-color: black;
     padding: 20px;
 }
@@ -107,8 +107,6 @@ div h2 {
     text-align: center;
 }
 .main-content {
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
     margin: 10px;
     padding: 40px;
     min-height: 200px;

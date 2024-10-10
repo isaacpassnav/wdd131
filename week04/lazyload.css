@@ -1,0 +1,106 @@
+@media screen and (max-width: 768px) {
+    .principal-content {
+        flex-direction: column; 
+    }
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+    .main-content, .aside {
+        margin: 10px;
+        padding: 20px;
+    }
+    .header-content {
+        padding: 15px; 
+        font-size: 1.2rem; 
+    }
+}
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #FCA311;
+
+    --heading-font: "Abril Fatface", serif;
+    --paragraph-font: "Alegreya Sans", serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-content {
+    border: solid 2px;
+    background-color: #1c0000 ;
+    display: flex;
+    justify-content: center;  
+    padding: 30px;
+}
+.principal-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+}
+figure {
+    margin: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    text-align: center;
+}
+figure img {
+    width: 400px;
+    min-height: 600px;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* trabajando con el footer */
+.nav-social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 200px;
+}
+footer {
+    background-color: rgb(2, 71, 110);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.nav-social-media img {
+    width: 30px; 
+    height: auto; 
+    object-fit: cover; 
+}
+.conteiner-social-media {
+    display: flex;
+    padding-right: 60px;
+}
+footer p {
+    padding: 30px;
+    display: flex;
+    color: #ffffff;
+}
+.nav-social-media img {
+    padding: 5px;
+}
