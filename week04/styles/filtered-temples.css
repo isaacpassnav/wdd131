@@ -82,25 +82,43 @@ nav a:hover {
 #menu.show::before {
 	content: "X";
 }
-main div{
+.section2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Crear 4 columnas de igual tamaño */
-    gap: 10px; 
-    padding: 10px;
-}
-img {
-    max-width: 100%;
-}
-figure {
-	margin: 10px;
-	border: 1px solid #ccc;
-	padding: 5px;
-	background-color: #f8f8f8;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px #ccc;
-	text-align: center;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    padding: 20px;
 }
 
+/* Card layout */
+/* .main-div {
+    gap: 20px;
+    max-width: 100%; 
+    margin: 0 auto;
+} */
+
+/* Each card */
+.card {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    justify-content: space-between;
+    margin: 15px;
+}
+/* Card content */
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.card h3{
+    color: #000;
+}
 /* trabajando con el footer */
 .nav-social-media {
     display: flex;
@@ -147,4 +165,3 @@ footer p {
         display: none;
     }
 }
-
