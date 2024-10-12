@@ -1,16 +1,3 @@
-@media screen and (max-width: 768px) {
-    .principal-content {
-        flex-direction: column; 
-    }
-    .nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .main-content, .aside {
-        margin: 10px;
-        padding: 20px;
-    }
-}
 body {
     font-family: var(--paragraph-font);
     line-height: 1.6;
@@ -65,11 +52,8 @@ nav a {
 .nav {
     border: solid 2px;
     background-color: black;
-    display: flex;
+    display: none;
     justify-content: space-around;
-    padding: 20px;
-    display: none; 
-    background-color: black;
     padding: 20px;
 }
 nav a:hover {
@@ -88,15 +72,6 @@ nav a:hover {
     justify-content: center;
     padding: 20px;
 }
-
-/* Card layout */
-/* .main-div {
-    gap: 20px;
-    max-width: 100%; 
-    margin: 0 auto;
-} */
-
-/* Each card */
 .card {
     background-color: #f8f8f8;
     border: 1px solid #ccc;
@@ -119,7 +94,6 @@ nav a:hover {
 .card h3{
     color: #000;
 }
-/* trabajando con el footer */
 .nav-social-media {
     display: flex;
     justify-content: space-around;
@@ -149,19 +123,64 @@ footer p {
 .nav-social-media img {
     padding: 5px;
 }
-@media only screen and ( min-width: 40em ) {
-    h1 {
-        font-size: 2rem;
-        margin: 1rem;
+ /* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    /* Ajustar la navegación */
+    #menu {
+        display: block;  
     }
-    .nav{
-        display: flex;
+    .nav {
+        display: none;  
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav.show {
+        display: block; 
     }
     .nav a {
-        display: block;
-        flex: 1 1 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .section2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .conteiner-social-media {
+        padding-right: 0;
+    }
+    footer p {
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section2 {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
     }
     #menu {
-        display: none;
+        display: none; 
+    }
+    .nav {
+        display: flex; 
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .section2 {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+    }
+    #menu {
+        display: none; 
+    }
+    .nav {
+        display: flex; 
+        justify-content: space-around;
     }
 }
