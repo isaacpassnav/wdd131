@@ -1,4 +1,3 @@
-
 function cardsLoad(temples) {
     const section = document.querySelector('.section2'); 
     temples.forEach(temple => {
@@ -32,4 +31,3 @@ function cardsLoad(temples) {
 }
 
 cardsLoad(temples);
-
