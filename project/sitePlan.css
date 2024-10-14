@@ -43,6 +43,7 @@ footer {
 .nav-social-media img {
     width: 30px; 
     height: auto; 
+    padding: 5px;
     object-fit: cover; 
 }
 .conteiner-social-media {
@@ -53,9 +54,6 @@ footer p {
     padding: 30px;
     display: flex;
     color: #ffffff;
-}
-.nav-social-media img {
-    padding: 5px;
 }
  /* Ajustes para pantallas pequeñas */
  @media screen and (max-width: 768px) {
