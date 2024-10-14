@@ -21,6 +21,7 @@ header {
     background-color: var(--secondary-backgrounds) ;
     text-align: center;
     padding: 20px;
+    color: var(--primary-color);
 }
 main {
     max-width: 960px;
