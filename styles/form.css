@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #ffffff;
+    --nav-background: #005B96;
+    --buttons-links: #FF8C00;
+    --secondary-backgrounds: #007F24;
+    --cards-backgrounds: #E0E0E0;
+
+    --heading-font: "Cinzel Decorative", serif;
+    --paragraph-font: "Alegreya Sans", serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+}
+body{
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    align-items: center;
+    max-width: 960px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--secondary-backgrounds);
+    text-align: center;
+}
+form {
+    background-color: var(--cards-backgrounds);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+}
+fieldset#rating,
+fieldset#feature {
+  border: 2px solid; 
+  margin-bottom: 50px;
+  padding: 15px 0px;
+  position: relative;
+  margin: 30px 0px;
+}
+#installation-date input[type="date"] {
+    border: none; 
+    padding: 10px; 
+    font-size: 16px; 
+    width: 40%; 
+}
+legend {
+    font-weight: bold;
+    padding: 0px;
+    position: absolute;
+    top: -22px;
+    left: 0px;
+    font-size: 12px;
+}
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+button.post-review{
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 20px 40px;
+    display: flex;
+    margin: 0 auto;  
+}
+
+button:hover{
+    background-color: var(--buttons-links);
+}
+label[for^="start"] {
+    font-size: 24px;
+    color: #ddbe0d;
+    cursor: pointer;
+    margin-right: 5px;
+}
+input[type="radio"]:checked ~ label[for^="start"] {
+    color: #dabc15;
+}
+.nav-social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 200px;
+}
+footer {
+    background-color: var(--nav-background);
+    display: flex;
+    justify-content: space-between;
+}
+.nav-social-media img {
+    width: 30px; 
+    height: auto; 
+    padding: 5px;
+    object-fit: cover; 
+}
+.conteiner-social-media {
+    display: flex;
+    padding-right: 60px;
+}
+footer p {
+    padding: 30px;
+    display: flex;
+    color: var(--primary-color);
+}
+@media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  
+    fieldset {
+      margin-bottom: 30px;
+      padding: 10px 0px;
+    }
+  
+    input[type="text"], textarea, select, #installation-date input[type="date"] {
+      font-size: 14px;
+    }
+  
+    button.post-review {
+      padding: 15px 30px;
+      font-size: 14px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .conteiner-social-media {
+        padding-right: 0;
+    }
+    footer p {
+        padding: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    form {
+      padding: 15px;
+    }
+  
+    input[type="text"], textarea, select, #installation-date input[type="date"] {
+      font-size: 12px;
+      padding: 8px;
+    } 
+    button.post-review {
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+    label[for^="start"] {
+      font-size: 20px;
+    }
+}

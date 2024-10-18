@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="site plan for Product Review Form">
+    <meta name="author" content="Isaac Pasapera">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/form.css" >
+    <script src="./scripts/w05.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="select">Product Name</label>
+                <select name="product name" id="product-name">
+                    <option value="product1"></option>
+                    <option value="product2"></option>
+                    <option value="product3"></option>
+                    <option value="product4"></option>
+                </select>
+            <!-- <label for="">Overall Rating</label> -->
+            <fieldset id="rating">
+                <legend>Overall Rating:</legend>
+                <input type="radio" id="start5" name="rating" value="5">
+                <label for="start5" title="5 stars">★★★★★</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="start4" title="4 stars">★★★★☆</label>
+
+                <input type="radio" id="start3" name="rating" value="3">
+                <label for="start3" title="3 stars">★★★☆☆</label>
+
+                <input type="radio" name="rating" id="start2" value="2">
+                <label for="start2" title="2 stars">★★☆☆☆</label>
+
+                <input type="radio" name="rating" id="start1" value="1">
+                <label for="start1" title="1 star">★☆☆☆☆</label>
+            </fieldset>
+            <fieldset id="installation-date">
+                <legend>Installation Date</legend>
+                <label for="installation-date"></label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </fieldset>            
+            <!-- Features Checklist -->
+            <fieldset id="feature">
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <input type="checkbox" id="durability" name="feature" value="Durability">
+                <label for="durability">Durability</label><br>
+
+                <input type="checkbox" id="ease" name="feature" value="Ease of Use">
+                <label for="ease">Ease of Use</label> <br>
+
+                <input type="checkbox" name="Performance" id="performance" value="Performance">
+                <label for="performance">Performance</label> <br>
+
+                <input type="checkbox" name="Design" id="design" value="Design">
+                <label for="design">Design</label>
+            </fieldset>
+
+            <label for="review">Written Review <strong class="optional">(Optional)</strong></label> <br>
+            <textarea name="review" id="review"></textarea>
+
+            <label for="your-name">Your Name <strong class="optional">(optional)</strong></label> <br>
+            <input type="text" name="your-name" id="name"> 
+            <br>
+            <button type="submit" class="post-review">Post Review</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>
+            &copy; <span id="currentyear"></span>  Isaac Pasapera | Perú-Lima
+        </p>
+        <p id="lastModified"></p>
+        <nav class="nav-social-media">
+            <div class="conteiner-social-media">
+                <a href="https://facebook.com">
+                    <img src="../images/facebook.png" width="30" alt="facebook">
+                </a>
+                <a href="https://twitter.com/i/flow/login">
+                    <img src="../images/twitter.png" width="30" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../images/instagram.png" width="30" alt="instagram">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
