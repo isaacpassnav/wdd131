@@ -79,7 +79,8 @@ button:hover{
 }
 label[for^="start"] {
     font-size: 24px;
-    color: #ddbe0d;
+    color: #FFD700;
+    background-color: #000000;
     cursor: pointer;
     margin-right: 5px;
 }
