@@ -22,9 +22,9 @@
         <h1>Product Review Form</h1>
     </header>
     <main>
-        <form action="submitReview.html">
-            <label for="product name">Product Name</label>
-                <select name="product name" id="product-name">
+        <form action="submitReview">
+            <label for="product-name">Product Name</label>
+                <select name="product-name" id="product-name">
                     <option value="product1">product1</option>
                     <option value="product2">product2</option>
                     <option value="product3">product3</option>
@@ -36,7 +36,7 @@
                 <input type="radio" id="start5" name="rating" value="5">
                 <label for="start5" title="5 stars">★★★★★</label>
 
-                <input type="radio" id="star4" name="rating" value="4">
+                <input type="radio" id="start4" name="rating" value="4">
                 <label for="start4" title="4 stars">★★★★☆</label>
 
                 <input type="radio" id="start3" name="rating" value="3">
@@ -50,7 +50,7 @@
             </fieldset>
             <fieldset id="installation-date">
                 <legend>Installation Date</legend>
-                <label for="installation-date"></label>
+                <label for="installation-date-input"></label>
                 <input type="date" id="installation-date-input" name="installation-date" required>
             </fieldset>            
             <!-- Features Checklist -->
@@ -72,7 +72,7 @@
             <label for="review">Written Review <strong class="optional">(Optional)</strong></label> <br>
             <textarea name="review" id="review"></textarea>
 
-            <label for="your-name">Your Name <strong class="optional">(optional)</strong></label> <br>
+            <label for="name">Your Name <strong class="optional">(optional)</strong></label> <br>
             <input type="text" name="your-name" id="name"> 
             <br>
             <button type="submit" class="post-review">Post Review</button>
