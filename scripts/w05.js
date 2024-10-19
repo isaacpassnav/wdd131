@@ -5,8 +5,11 @@ const products = [
     { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
     { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ]
+
 const selectElement = document.getElementById("product-name");
-// Create a default "Please select" option
+
+selectElement.innerHTML = "";
+
 const defaultOption = document.createElement("option");
 defaultOption.textContent = "Please select a product";
 defaultOption.value = "";
@@ -15,21 +18,20 @@ defaultOption.disabled = true;
 selectElement.appendChild(defaultOption);
 
 products.forEach(product => {
-    const option = document.querySelector("option")
-    option.value = option.id;
-    option.textContent = product.name;
+    const option = document.createElement("option");
+    option.value = product.id; 
+    option.textContent = product.name;  
     selectElement.appendChild(option);
 });
 
-document.addEventListener("DOMContentLoaded", ()=>{
-
-    const reviewCount = localStorage.getItem("reviewCount");
+document.addEventListener("DOMContentLoaded", () => {
+    let reviewCount = localStorage.getItem("reviewCount");
     if (!reviewCount) {
         reviewCount = 0;
-    }else{
+    } else {
         reviewCount = parseInt(reviewCount, 10);
     }
-    reviewCount ++
+    reviewCount++;
     localStorage.setItem("reviewCount", reviewCount);
 
     console.log("Cantidad de revisiones completadas:", reviewCount);
