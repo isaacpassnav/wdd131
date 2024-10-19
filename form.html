@@ -20,18 +20,20 @@
         <h1>Product Review Form</h1>
     </header>
     <main>
-        <form action="review.html" method="get">
-            <label for="product-name">Product Name</label>
-                <select name="product-name" id="product-name">
+        <form action="form.html" method="get">
+            <label for="product-name">Product Name <strong>*</strong></label>
+                <select name="product-name" id="product-name" required>
+        
                     <option value="product1">product1</option>
                     <option value="product2">product2</option>
                     <option value="product3">product3</option>
                     <option value="product4">product4</option>
+                    <option value="product5">product4</option>
                 </select>
             <!-- <label for="">Overall Rating</label> -->
             <fieldset id="rating">
-                <legend>Overall Rating:</legend>
-                <input type="radio" id="start5" name="rating" value="5">
+                <legend>Overall Rating <strong>*</strong></legend>
+                <input type="radio" id="start5" name="rating" value="5" required>
                 <label for="start5" title="5 stars">★★★★★</label>
 
                 <input type="radio" id="start4" name="rating" value="4">
@@ -46,8 +48,8 @@
                 <input type="radio" name="rating" id="start1" value="1">
                 <label for="start1" title="1 star">★☆☆☆☆</label>
             </fieldset>
-            <fieldset id="installation-date">
-                <legend>Installation Date</legend>
+            <fieldset id="installation-date"> 
+                <legend>Installation Date <strong>*</strong></legend>
                 <label for="installation-date-input"></label>
                 <input type="date" id="installation-date-input" name="installation-date" required>
             </fieldset>            
