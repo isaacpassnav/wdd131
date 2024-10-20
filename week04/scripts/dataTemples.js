@@ -62,6 +62,42 @@ const temples = [
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
       },
+      {
+        id: 8,
+        templeName: "Trujillo Temple, Peru",
+        location: "Trujillo City, Perú",
+        dedicated: "2015,June,21",
+        area: 387501,
+        imageUrl:
+        "https://www.churchofjesuschrist.org/imgs/9943a99ff243f011c0533e3633cf9ecee0829628/full/320%2C/0/default"
+      },
+      {
+        id: 9,
+        templeName: "Temple of Los Olivos, Lima, Peru",
+        location: "Los Olivos, Lima",
+        dedicated: "2024, January, 14",
+        area: 9601,
+        imageUrl:
+        "https://www.churchofjesuschrist.org/imgs/3f3327a93b9f11eeb2f0eeeeac1e45f6554046d6/full/320%2C/0/default"
+      },
+      {
+        id: 10,
+        templeName: "Temple of Arequipa, Perú",
+        location: "Arequipa City, Perú",
+        dedicated: "2019, December, 15",
+        area: 26969,
+        imageUrl:
+        "https://churchofjesuschrist.org/imgs/55f6c59ce8f9c093a9c689067f8674335de544e2/full/320%2C/0/default"
+      },
+      {
+        id: 11,
+        templeName: "Anchorage Alaska Temple",
+        location: "Anchorage, Alaska, United States",
+        dedicated: "1999, January, 9",
+        area: 11937,
+        imageUrl:
+        "https://www.churchofjesuschrist.org/imgs/ef1d9b0a65b398d3d5aad2ccaad5aa79588b6cfd/full/320%2C/0/default"
+      }
 ]
 
 function filterTemples(criteria) {
