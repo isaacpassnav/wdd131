@@ -1,0 +1,204 @@
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    background-color: var(--secondary-background);
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-background: #007F24;
+    --nav-background: #005B96;
+    --buttons-links: #FF8C00;
+    --cards-background: #E0E0E0;;
+
+    --heading-font: "Cinzel Decorative", serif;
+    --paragraph-font: "Alegreya Sans", serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+}
+.header-content{
+    background-color: var(--secondary-background);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 10px;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .05rem .75rem;
+}
+#menu::before{
+    display: none;
+    content: "≡";
+}
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+}
+.nav{   
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+nav a:hover {
+    color: var(--buttons-links);
+    text-decoration: underline;
+}
+.nav.show {
+    display: flex;
+}
+#menu.show::before {
+	content: "X";
+}
+/* TRABAJANDO CON INDEX-SECTION1 */
+.index-sectio1{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.header-index {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+.header-index picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+.header-index img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.index-sectio1 h1 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 2;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(7, 3, 3, 0.7);
+    font-size: 3.3rem; 
+}
+.index-sectio1 p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    z-index: 2;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(63, 27, 27, 0.7);
+    font-size: 1.3rem;
+    margin-top: 10px; 
+    max-width: 600px; 
+    text-align: center; 
+}
+.section-body {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px;
+    font-size: 1.3rem
+}
+.section-body h1{
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 30px;
+    display: inline-block;
+    opacity: 0;
+    color: var(--primary-color);
+}
+.section-body p, .section-body ul li{
+    text-align: justify;
+    color: var(--primary-color);
+    margin: 10px;
+}
+.section-body ul {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+.section-body ul.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.list {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+.list.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Estilos para el carrusel */
+.tooltip-trips {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.card {
+    flex: 0 0 33.3333%; /* Cada card ocupará un tercio del contenedor */
+    box-sizing: border-box;
+    padding: 20px;
+    transition: transform 1s ease;
+    border: 1px solid #ccc;
+    background-color: var(--cards-background);
+    box-shadow: 1px 1px 5px #ccc;
+
+}
+.card img {
+    width: 100%;
+    height: 270px;
+    display: block;
+}
+.card h3, .card p {
+    text-align: center;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: bold;
+}
+/* trabajadno con footer */
+.nav-social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    max-width: 200px;
+}
+footer {
+    background-color: rgb(2, 71, 110);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.nav-social-media img {
+    width: 30px; 
+    height: auto; 
+    object-fit: cover; 
+}
+.conteiner-social-media {
+    display: flex;
+    padding-right: 60px;
+}
+footer p {
+    padding: 30px;
+    display: flex;
+    color: var(--primary-color)
+}
+.nav-social-media img {
+    padding: 5px;
+}
