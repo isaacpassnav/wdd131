@@ -159,7 +159,6 @@ nav a:hover {
     border: 1px solid #ccc;
     background-color: var(--cards-background);
     box-shadow: 1px 1px 5px #ccc;
-
 }
 .card img {
     width: 100%;
@@ -202,7 +201,14 @@ footer p {
 .nav-social-media img {
     padding: 5px;
 }
-/* Working to About us*/
+                    /* Working to About us*/
+.header{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#header-about-us h1{
+    padding: 30px;
+}
 .team-card {
     display: flex;
     align-items: center;
@@ -210,8 +216,29 @@ footer p {
     padding: 20px;
     border-radius: 15px;
     background-color: var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: var(--cards-background); 
+}
+/* Estilos específicos para las tarjetas de la derecha */
+.card-right {
+    flex-direction: row-reverse; /* La imagen estará a la derecha */
+    text-align: left; /* Aseguramos que el texto se alinee correctamente */
+}
+  
+  /* Estilos para las tarjetas de la izquierda */
+.card-left {
+    flex-direction: row; /* La imagen estará a la izquierda */
+    text-align: right; /* Alineamos el texto a la derecha */
+}
+.team-info.show-left h4{
+    text-align: left;
+}
+.team-info h3, h4{
+    color: var(--buttons-links);
+    margin: 0;
+}
+.team-info h3{
+    font-weight: bold;
+    box-shadow: #000000;
 }
 .team-card img {
     width: 150px;
@@ -219,9 +246,13 @@ footer p {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 33px;
 }
 .team-info {
     max-width: 600px; /* Ajusta esto según tu diseño */
+}
+.team-card.right h3, h4{
+    text-align: right;       
 }
 .team-card.right {
     flex-direction: row-reverse; /* Esto hará que el contenido fluya en dirección inversa */

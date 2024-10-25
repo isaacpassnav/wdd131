@@ -38,8 +38,8 @@ const teamMembers = [
         id: 6,
         fullName: "Isaac Pasapera",
         position: "Tech Development Director",
-        description: "Passionate about technology and system development, Isaac leads Rafting Adventures' technical team. His innovation and focus on continuous improvement have enabled the creation of advanced tools to enhance customer experience and operational efficiency.",
-        img: "https://drive.google.com/file/d/1xaQm4yRRn7KnWTR1XxeBJ1tv3SgEVHke/view?usp=sharing"
+        description: "Passionate about technology and system development, Isaac leads Rafting Adventures' technical team. With expertise in HTML, JavaScript, React, MySQL, TypeScript, CSS, C#, and Python, he creates advanced tools to enhance customer experience and operational efficiency.",
+        img: "https://raw.githubusercontent.com/isaacpassnav/wdd131/refs/heads/main/Website%20Project/images/isaac-pasapera.webp"
         
     }
 ]
@@ -98,7 +98,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.2 });
 
-// Observar todas las tarjetas del equipo
 document.querySelectorAll('.team-card').forEach(card => observer.observe(card));
 
 
