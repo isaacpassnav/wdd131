@@ -310,5 +310,69 @@ footer p {
   .team-card img.fade-in {
     animation: fadeIn 1s forwards;
 }
-  
-  
+/* Working with TOURS.HTML */
+.blink {
+    animation: blink-animation 1s infinite;
+    color: var(--buttons-links);
+    cursor: pointer; 
+    text-decoration: none;
+}
+@keyframes blink-animation {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+.blink:hover {
+    color: var(--buttons-links); 
+    text-shadow: 0 0 5px var(--buttons-links), 0 0 5px var(--buttons-links), 0 0 5px var(--buttons-links); /* Efecto de brillo */
+    animation: none; 
+}
+.tours-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.tour-card {
+    background-color: var(--cards-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.tour-info {
+    padding: 20px;
+}
+.tour-info h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.tour-info p {
+    text-align: justify;
+    font-weight: bold;
+}
+.tour-card:hover {
+    transform: translateY(-10px);
+}
+.book-now-btn {
+    background-color: var(--buttons-links);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.book-now-btn:hover {
+    background-color: var(--secondary-background); 
+}
