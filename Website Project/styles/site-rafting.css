@@ -202,3 +202,82 @@ footer p {
 .nav-social-media img {
     padding: 5px;
 }
+/* Working to About us*/
+.team-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+.team-info {
+    max-width: 600px; /* Ajusta esto según tu diseño */
+}
+.team-card.right {
+    flex-direction: row-reverse; /* Esto hará que el contenido fluya en dirección inversa */
+}
+.team-card.right img {
+    margin-right: 0;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+/* Para el texto de las tarjetas que viene desde la izquierda */
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* Para el texto que viene desde la derecha */
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .team-info {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  /* Clase que se aplicará cuando el texto entre en la vista */
+  .show-left {
+    animation: slideInLeft 0.5s forwards;
+  }
+  .show-right {
+    animation: slideInRight 0.5s forwards;
+}
+/* Para el fade-in de las imágenes */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .team-card img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .team-card img.fade-in {
+    animation: fadeIn 1s forwards;
+}
+  
+  
