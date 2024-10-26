@@ -37,9 +37,7 @@ const riverClassification = [
         imageUrl: "https://riverexplorers.com/wp-content/uploads/2023/01/Tambopata-rafting-peru.jpg",
     }
 ];
-
 const toursContainer = document.querySelector(".tours-container");
-
 riverClassification.forEach((trip) => {
     const tourCard = document.createElement("div");
     tourCard.classList.add("tour-card");
@@ -74,3 +72,24 @@ riverClassification.forEach((trip) => {
 
     toursContainer.appendChild(tourCard);
 });
+// logica para usar localStorage e interaccion con el usuario cuando pinche boton de suscribe
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('subscribeForm');
+    const successMessage = document.getElementById('successMessage');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        // Guardar los datos en localStorage
+        localStorage.setItem('subscriberName', name);
+        localStorage.setItem('subscriberEmail', email);
+
+        successMessage.style.display = 'block';
+        // Recargar la página después de un pequeño delay
+        setTimeout(function() {
+            location.reload();
+        }, 2000);
+    });
+});
+

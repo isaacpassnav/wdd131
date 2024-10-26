@@ -1,0 +1,96 @@
+
+/* Estilos básicos para que el menú de hamburguesa se muestre solo en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #menu {
+        display: block; /* Muestra el botón de menú */
+    }
+    .nav {
+        display: none;  
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav a {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .index-sectio1 h1, .index-sectio1 p {
+        position: absolute;
+        color: var(--primary-color);
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .index-sectio1 p{
+        padding-left: 4%;
+    }
+    /* Section Body */
+    .section-body {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .section-body h1 {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1rem; /* Ajustamos el tamaño del h1 */
+        width: 80%;
+    }
+    .section-body ul, .section-body p {
+        padding: 10px 0;
+        text-align: justify;
+        width: 100%;
+    }
+
+    /* .section-body h1, ul, p {
+        padding-right: 50%;
+        text-align: justify;
+        font-size: 0.8rem;
+        width: 80%; 
+    } */
+    /* Trip Descriptions */
+    .trip-descriptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .text-content {
+        padding: 10px;
+    }
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Tooltip Trips */
+    .tooltip-trips {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .conteiner-social-media {
+        padding-right: 0;
+    }
+    footer p {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+

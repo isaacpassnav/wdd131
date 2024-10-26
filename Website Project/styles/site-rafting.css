@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6 {
     gap: 10px;
 }
 #menu {
+    display: none;
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -311,25 +312,6 @@ footer p {
     animation: fadeIn 1s forwards;
 }
 /* Working with TOURS.HTML */
-.blink {
-    animation: blink-animation 1s infinite;
-    color: var(--buttons-links);
-    cursor: pointer; 
-    text-decoration: none;
-}
-@keyframes blink-animation {
-    0%, 49% {
-        opacity: 1;
-    }
-    50%, 100% {
-        opacity: 0;
-    }
-}
-.blink:hover {
-    color: var(--buttons-links); 
-    text-shadow: 0 0 5px var(--buttons-links), 0 0 5px var(--buttons-links), 0 0 5px var(--buttons-links); /* Efecto de brillo */
-    animation: none; 
-}
 .tours-container {
     display: flex;
     flex-wrap: wrap;
@@ -376,3 +358,225 @@ footer p {
 .book-now-btn:hover {
     background-color: var(--secondary-background); 
 }
+/* FORMULARIO DE SECCION TOURS */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cards-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 70px;
+}
+.formulario .header {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.formulario p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario label {
+    text-align: left;
+    font-weight: bold;
+}
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); 
+}
+.formulario button {
+    padding: 10px 20px;
+    background-color: var(--buttons-links);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.formulario button:hover {
+    background-color: var(--secondary-background) 
+}
+/* TRABAJANDO CON RESERVATIONS */
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 25px;
+}
+.form-container form, .form-container .contact-info{
+    width: 48%;
+}
+.form-container h1 {
+    font-size: 2rem;
+    color: var(--secondary-background);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-container p {
+    font-size: 1rem;
+    color: var(--secondary-background);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.reservation-form {
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.reservation-form p, h1{
+    margin: 0;
+    margin-bottom: 30px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+    color: var(--secondary-background);
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: var(--buttons-links);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: var(--secondary-background);
+}
+/* Styles for radio button group */
+.purpose-message .form-group {
+    display: flex;
+    flex-direction: column;
+}
+.purpose-message p {
+    margin: 0;
+}
+.newsletter-subscription {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start; /* Alinea todo a la izquierda */
+}
+.newsletter-subscription label {
+    font-weight: normal;
+    color: var(--secondary-background);
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    height: 1000px;
+}
+.h2-contact {
+    font-size: 2rem;
+    color: var(--secondary-background);
+    margin-bottom: 10px;
+}
+.contact-info address {
+    font-style: normal;
+    color: var(--secondary-background);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-info iframe {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estado inicial: oculto y desplazado */
+.form-container .reservation-form,
+.form-container .contact-info {
+    opacity: 0;
+    transform: translateX(-50px); /* desplazamiento hacia la izquierda */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* animación */
+}
+
+/* Estado visible: se muestra */
+.form-container.visible .reservation-form,
+.form-container.visible .contact-info {
+    opacity: 1;
+    transform: translateX(0); /* vuelve a la posición normal */
+}
+/* carousel conteiner */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del contenedor */
+    margin: 0 auto;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+

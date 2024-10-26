@@ -135,7 +135,9 @@ footer p {
         padding: 10px;
     }
     .nav.show {
-        display: block; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .nav a {
         text-align: center;

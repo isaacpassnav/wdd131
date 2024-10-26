@@ -21,7 +21,106 @@
         </nav>
     </header>
     <main>
-
+        <section class="index-sectio1">
+            <h1 class="header">Exploring Peru, One Adventure at a Time.</h1>
+            <p class="index-p"><strong">"There's nothing we like more than rolling up our sleeves and starting a brand new project. Let's make something great together"</strong></p>
+            <div class="header-index">              
+                <picture>
+                    <source srcset="./images/river-wide-medium.webp" media="(min-width: 1000px)">
+                    <source srcset="./images/river-wide-small.webp" media="(min-width: 500px)"> 
+                    <img src="./images/river-wide.jpg" alt="background-section1">
+                </picture>
+            </div>
+        </section>
+        <hr>
+        <section class="form-container">
+        
+            <form action="index.html" method="post" class="reservation-form">
+                <h1>Reserva tu próxima aventura</h1>
+                <p>Elige la fecha, el tipo de rafting y la cantidad de personas. ¡Es rápido y fácil!</p>
+                <!-- Nombre del usuario -->
+                <fieldset class="form-group">
+                    <label for="name">fullnames *</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required placeholder="Isaac Pasapera">
+                </fieldset>
+        
+                <!-- Correo del usuario -->
+                <fieldset class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required placeholder="isaacpasapera@gmail.com">
+                </fieldset>
+                
+                <!-- Fecha del viaje -->
+                <fieldset class="form-group">
+                    <label for="trip-date">Fecha del viaje *</label>
+                    <input type="date" id="trip-date" name="trip-date" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="trip-type">Tipo de aventura *</label>
+                    <select id="trip-type" name="trip-type" required >
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="easy">Class I - Easy</option>
+                        <option value="rookie">Class II - Rookie</option>
+                        <option value="intermediate">Class III - Intermediate</option>
+                        <option value="advanced">Class IV - Advanced</option>
+                        <option value="expert">Class V - Expert</option>
+                        <option value="extreme">Class VI - Extreme</option>
+                    </select>
+                </fieldset>
+                <!-- Número de personas -->
+                <div class="form-group">
+                    <label for="num-people">Número de personas *</label>
+                    <input type="number" id="num-people" name="num-people" min="1" max="20" required>
+                </div>
+                <fieldset class="form-group purpose-message">
+                    <label for="purpose-label" id="purpose-label">Consultas y Sugerencias(optional)</label>
+                    <div class="radio-group">
+                        <input type="radio" id="general-query" name="purpose" value="general-query" required>
+                        <label for="general-query">Consulta general</label><br>
+                        <input type="radio" id="reservation-question" name="purpose" value="reservation-question" required>
+                        <label for="reservation-question">Consulta de reserva</label><br>
+                        <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion" required>
+                        <label for="website-suggestion">Sugerencia de la web</label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje(optional):</label>
+                    <textarea id="message" name="message" placeholder="Detalles adicionales" required></textarea>
+                </div>
+        
+                <!-- Suscripción al newsletter  -->
+                <fieldset class="form-group newsletter-subscription">
+                    <input type="checkbox" id="newsletter-subscription" name="newsletter-subscription" value="subscribe">
+                    <label for="newsletter-subscription">Suscríbete a nuestro boletín</label>
+                </fieldset>                
+                
+                <div class="form-group button-submit">
+                    <button type="submit" class="submit-button">Reservar ahora</button>
+                </div>
+            </form>
+            <br>
+            <div class="contact-info">
+                <h2 class="h2-contact">Contact Information</h2>
+                <address>
+                    <strong>Dirección:</strong> Calle de Ejemplo 123, Ciudad Ejemplo<br>
+                    <strong>Teléfono:</strong> +1234567890<br>
+                    <strong>Email:</strong> info@raftingadventure.com
+                </address>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1YVtH27JEwmp1iQ1XOun0Yh7C-Eg&ehbc=2E312F" width="640" height="480" loading="lazy"></iframe>
+            </div>  
+        </section> 
+        <section class="happy-guests">
+            <h1 class="header" style="color: #ffff;">🥳 Our Happy Guests 🥳</h1>
+            <br>
+            <div class="carousel-container">
+                <button class="carousel-control prev">‹</button>
+                <div class="carousel">
+                    <!-- Aquí irán las tarjetas generadas dinámicamente -->
+                </div>
+                <button class="carousel-control next">›</button>
+            </div>
+        </section>           
     </main>
     <footer class="footer">
         <p>
@@ -44,4 +143,5 @@
     </footer>
 </body>
 <script src="./scripts/getdates.js"></script>
+<script src="./scripts/reservation.js"></script>
 </html>
