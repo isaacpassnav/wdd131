@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: var(--paragraph-font);
     line-height: 1.6;
@@ -18,11 +21,11 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
 }
 .header-content{
-    background-color: var(--secondary-background);
-    padding: 20px;
+    background-color: #000000;
+    padding: 15px;
     display: grid;
     grid-template-columns: auto 1fr; 
-    gap: 10px;
+    align-items: center;
 }
 #menu {
     display: none;
@@ -35,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 #menu::before{
     display: none;
     content: "≡";
+    color: var(--buttons-links);
 }
 nav a {
     text-decoration: none;
@@ -87,7 +91,7 @@ nav a:hover {
 }
 .index-sectio1 h1 {
     position: absolute;
-    top: 1%;
+    top: 4%;
     left: 50%;
     transform: translateX(-50%); 
     z-index: 2;

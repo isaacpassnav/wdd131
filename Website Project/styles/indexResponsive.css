@@ -46,13 +46,6 @@
         text-align: justify;
         width: 100%;
     }
-
-    /* .section-body h1, ul, p {
-        padding-right: 50%;
-        text-align: justify;
-        font-size: 0.8rem;
-        width: 80%; 
-    } */
     /* Trip Descriptions */
     .trip-descriptions {
         display: flex;
