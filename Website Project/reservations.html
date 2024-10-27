@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./styles/site-rafting.css">
-
+    <link rel="stylesheet" href="./styles/reservationResponsive.css">
 </head>
 <body>
     <header class="header-content">
@@ -33,8 +33,7 @@
             </div>
         </section>
         <hr>
-        <section class="form-container">
-        
+        <section class="form-container">       
             <form action="index.html" method="post" class="reservation-form">
                 <h1>Reserva tu próxima aventura</h1>
                 <p>Elige la fecha, el tipo de rafting y la cantidad de personas. ¡Es rápido y fácil!</p>
@@ -97,18 +96,22 @@
                 
                 <div class="form-group button-submit">
                     <button type="submit" class="submit-button">Reservar ahora</button>
-                </div>
+                </div><br>
             </form>
-            <br>
-            <div class="contact-info">
-                <h2 class="h2-contact">Contact Information</h2>
-                <address>
-                    <strong>Dirección:</strong> Calle de Ejemplo 123, Ciudad Ejemplo<br>
-                    <strong>Teléfono:</strong> +1234567890<br>
-                    <strong>Email:</strong> info@raftingadventure.com
-                </address>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1YVtH27JEwmp1iQ1XOun0Yh7C-Eg&ehbc=2E312F" width="640" height="480" loading="lazy"></iframe>
-            </div>  
+            <section id="contact-box">
+                <div class="contact-info" >
+                    <h2 class="h2-contact">Contact Information</h2>
+                    <address>
+                        <strong>Dirección:</strong> Calle de Ejemplo 123, Ciudad Ejemplo<br>
+                        <strong>Teléfono:</strong> +1234567890<br>
+                        <strong>Email:</strong> info@raftingadventure.com
+                    </address>
+                    <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1YVtH27JEwmp1iQ1XOun0Yh7C-Eg&ehbc=2E312F" width="640" height="480" loading="lazy"></iframe>
+                    </div>
+                </div> 
+            </section>
+              
         </section> 
         <section class="happy-guests">
             <h1 class="header" style="color: #ffff;">🥳 Our Happy Guests 🥳</h1>
@@ -116,7 +119,7 @@
             <div class="carousel-container">
                 <button class="carousel-control prev">‹</button>
                 <div class="carousel">
-                    <!-- Aquí irán las tarjetas generadas dinámicamente -->
+                    
                 </div>
                 <button class="carousel-control next">›</button>
             </div>

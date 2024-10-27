@@ -421,6 +421,7 @@ footer p {
     margin: 0 auto;
     margin-top: 50px;
     gap: 25px;
+    background-color: #FF8C00;
 }
 .form-container form, .form-container .contact-info{
     width: 48%;

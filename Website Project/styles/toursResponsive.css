@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px) {
+    /* Menu de hamburguesa */
+    #menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav a {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+    .index-sectio1 p {
+        padding-left: 1%;
+        font-size: 1.1rem;
+    }
+    .index-sectio1 h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .our-tours h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    /* tarjetas */
+    .tours-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario {
+        padding: 20px;
+    }
+    .formulario .header {
+        font-size: 1.3rem;
+    }
+    .formulario form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario form label,
+    .formulario form input,
+    .formulario form button {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+    .formulario p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .conteiner-social-media {
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer p {
+        padding: 10px;
+    }
+}
