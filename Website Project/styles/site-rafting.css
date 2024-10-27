@@ -225,20 +225,19 @@ footer p {
 }
 /* Estilos específicos para las tarjetas de la derecha */
 .card-right {
-    flex-direction: row-reverse; /* La imagen estará a la derecha */
-    text-align: left; /* Aseguramos que el texto se alinee correctamente */
+    flex-direction: row-reverse; 
+    text-align: left; 
 }
-  
   /* Estilos para las tarjetas de la izquierda */
 .card-left {
-    flex-direction: row; /* La imagen estará a la izquierda */
-    text-align: right; /* Alineamos el texto a la derecha */
+    flex-direction: row; 
+    text-align: right; 
 }
 .team-info.show-left h4{
     text-align: left;
 }
 .team-info h3, h4{
-    color: var(--buttons-links);
+    color: #d97706 ;
     margin: 0;
 }
 .team-info h3{
@@ -250,21 +249,21 @@ footer p {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 20px; 
     margin-bottom: 33px;
 }
 .team-info {
-    max-width: 600px; /* Ajusta esto según tu diseño */
+    max-width: 600px; 
 }
 .team-card.right h3, h4{
     text-align: right;       
 }
 .team-card.right {
-    flex-direction: row-reverse; /* Esto hará que el contenido fluya en dirección inversa */
+    flex-direction: row-reverse; 
 }
 .team-card.right img {
     margin-right: 0;
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 20px; 
 }
 /* Para el texto de las tarjetas que viene desde la izquierda */
 @keyframes slideInLeft {
@@ -277,7 +276,6 @@ footer p {
       opacity: 1;
     }
   }
-  /* Para el texto que viene desde la derecha */
   @keyframes slideInRight {
     0% {
       transform: translateX(100%);
@@ -351,7 +349,7 @@ footer p {
     transform: translateY(-10px);
 }
 .book-now-btn {
-    background-color: var(--buttons-links);
+    background-color: #d97706 ;
     color: var(--primary-color);
     border: none;
     padding: 10px 20px;
@@ -480,7 +478,7 @@ footer p {
 }
 .submit-button {
     padding: 10px 20px;
-    background-color: var(--buttons-links);
+    background-color: #d97706 ;
     color: var(--primary-color);
     border: none;
     border-radius: 5px;
