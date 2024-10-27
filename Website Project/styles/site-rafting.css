@@ -237,7 +237,6 @@ footer p {
     text-align: left;
 }
 .team-info h3, h4{
-    color: #d97706 ;
     margin: 0;
 }
 .team-info h3{
@@ -349,7 +348,7 @@ footer p {
     transform: translateY(-10px);
 }
 .book-now-btn {
-    background-color: #d97706 ;
+    background-color: #000000;
     color: var(--primary-color);
     border: none;
     padding: 10px 20px;
@@ -478,7 +477,7 @@ footer p {
 }
 .submit-button {
     padding: 10px 20px;
-    background-color: #d97706 ;
+    background-color: #000000 ;
     color: var(--primary-color);
     border: none;
     border-radius: 5px;
