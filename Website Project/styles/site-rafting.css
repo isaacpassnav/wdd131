@@ -423,9 +423,6 @@ footer p {
     gap: 25px;
     background-color: #FF8C00;
 }
-.form-container form, .form-container .contact-info{
-    width: 48%;
-}
 .form-container h1 {
     font-size: 2rem;
     color: var(--secondary-background);
@@ -519,8 +516,6 @@ footer p {
     background-color: var(--primary-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
     height: 1000px;
 }
 .h2-contact {
@@ -534,24 +529,25 @@ footer p {
     text-align: center;
     margin-bottom: 20px;
 }
-.contact-info iframe {
+.iframe-container iframe {
     border: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 56.25%;
+    width: 100%;
 }
 /* Estado inicial: oculto y desplazado */
 .form-container .reservation-form,
 .form-container .contact-info {
     opacity: 0;
-    transform: translateX(-50px); /* desplazamiento hacia la izquierda */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* animación */
+    transform: translateX(-50px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
 }
-
 /* Estado visible: se muestra */
 .form-container.visible .reservation-form,
 .form-container.visible .contact-info {
     opacity: 1;
-    transform: translateX(0); /* vuelve a la posición normal */
+    transform: translateX(0); 
 }
 /* carousel conteiner */
 .carousel-container {
